@@ -1,7 +1,6 @@
 class Player
-  attr_accessor :hand
-  def initialize(hand)
-  @hand=hand
+  def hand (hand)
+  return hand
   end
   def hand
 	return @hand
@@ -9,9 +8,8 @@ class Player
 end
 
 class Enemy
-  attr_accessor :hand
-  def initialize(hand)
-  @hand=hand
+  def Enemy(hand)
+  return=hand
   end
 
   def hand
@@ -19,7 +17,6 @@ class Enemy
   end
 
 end
-	 
 class Janken
   attr_accessor :player_hand,:enemy_hand
   def initialize(player_hand,enemy_hand)
